@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Contenedor de globos animados -->
+    <div id="balloons-container"></div>
+
+    <!-- Contenedor de confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- HERO / SALUDO PRINCIPAL -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">¡HOY ES UN DÍA ESPECIAL!</p>
+        <h1 class="hero-title">
+          <span class="title-line">FELIZ</span>
+          <span class="title-line accent">CUMPLEAÑOS</span>
+        </h1>
+        <div class="bike-icon">💛</div>
+        <p class="hero-tagline">Ojitos de Miel</p>
+        <a href="#mensaje" class="btn-primary">Ver mensaje ↓</a>
+      </div>
+    </section>
+
+    <!-- MENSAJE EMOTIVO -->
+    <section id="mensaje" class="mensaje-section">
+      <div class="container">
+        <h2 class="section-title">Para ti, Norma</h2>
+        <div class="mensaje-card">
+          <p class="mensaje-text">
+            Hoy quiero recordarte algo que a veces olvidas entre el ajetreo
+            diario:
+            <strong>Eres una persona increíble</strong>. Sé que la vida te ha
+            puesto pruebas difíciles, sé que hay días en que el peso parece
+            demasiado, pero <span class="highlight">jamás te has rendido</span>.
+          </p>
+          <p class="mensaje-text">
+            Cada mañana te levantas con esa fuerza que pocos tienen, con esa
+            determinación que hace que las dificultades se hagan pequeñas frente
+            a tu voluntad. Eres mucho más de lo que muchos dicen, mucho más de
+            lo que te han hecho creer.
+          </p>
+          <p class="mensaje-text">
+            Las decisiones que tomas no son para mirar atrás, son para
+            <span class="highlight">seguir adelante</span>
+          </p>
+          <p class="mensaje-final">
+            De todo Corazón deseo verte triunfar, cumplir muchos sueños,
+            quisiera poder resolver todos tus problemas, sé que lo que doy son
+            dolores de cabeza, perdón por ello, Mil Gracias por tanto y mil
+            disculpas por tan poco.<br />
+            <strong>¡Te lo mereces todo!</strong> 🎉
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL DE IMÁGENES -->
+    <section class="carrusel-section">
+      <div class="container">
+        <h2 class="section-title">Tus momentos especiales</h2>
+        <div class="carrusel">
+          <div class="carrusel-track" id="carruselTrack">
+            <div class="slide">
+              <img src="https://res.cloudinary.com/diw9lwgme/image/upload/v1783995319/WhatsApp_Image_2026-07-13_at_20._qzvkvy.jpg" alt="Recuerdo 1" />
+            </div>
+            <div class="slide">
+              <img src="https://res.cloudinary.com/diw9lwgme/image/upload/v1783995322/WhatsApp_Image_2026-07-13_at_20.13.02_oszdt3.jpg" alt="Recuerdo 2" />
+            </div>
+            <div class="slide">
+              <img src="https://res.cloudinary.com/diw9lwgme/image/upload/v1783995320/WhatsApp_Image_2026-07-13_at_20.13._hsnysn.jpg" alt="Recuerdo 3" />
+            </div>
+            <div class="slide">
+              <img src="https://res.cloudinary.com/diw9lwgme/image/upload/v1783995319/WhatsApp_Image_2026-07-13_at_20.1_a90frg.jpg" alt="Recuerdo 4" />
+            </div>
+            <div class="slide">
+              <img src="https://res.cloudinary.com/diw9lwgme/image/upload/v1783995319/WhatsApp_Image_2026-07-13_at_2_paucgw.jpg" alt="Recuerdo 5" />
+            </div>
+          </div>
+          <button class="carrusel-btn prev" id="prevBtn">‹</button>
+          <button class="carrusel-btn next" id="nextBtn">›</button>
+          <div class="carrusel-dots" id="carruselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESEOS -->
+    <section class="deseos-section">
+      <div class="container">
+        <h2 class="section-title">Te quiero mucho :3</h2>
+        <div class="deseos-grid">
+          <div class="deseo-card">
+            <div class="deseo-icon">💛</div>
+            <h3>Jesús de Nazaret te cuide siempre</h3>
+            <p>Que cada camino que tomes te lleve a lugares increíbles.</p>
+          </div>
+          <div class="deseo-card">
+            <div class="deseo-icon">🌟</div>
+            <h3>Fuerza inquebrantable</h3>
+            <p>Que sigas siendo esa guerrera que no se rinde ante nada.</p>
+          </div>
+          <div class="deseo-card">
+            <div class="deseo-icon">💛</div>
+            <h3>Felicidad plena</h3>
+            <p>Que la vida te devuelva todo lo bueno que das.</p>
+          </div>
+          <div class="deseo-card">
+            <div class="deseo-icon">🌟</div>
+            <h3>Sueños cumplidos</h3>
+            <p>Que cada meta que te propongas la alcances con orgullo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Para una persona extraordinaria</p>
+      <p class="footer-year">© 2026 - MAOG18</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
